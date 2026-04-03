@@ -1,0 +1,11 @@
+flask>=3.0
+gunicorn>=21.2
+numpy>=1.26
+pandas>=2.2
+requests>=2.31
+pytz>=2024.1
+torch>=2.2 --index-url https://download.pytorch.org/whl/cpu
+tensorflow-cpu>=2.16
+scikit-learn>=1.4
+statsmodels>=0.14
+openpyxl>=3.1

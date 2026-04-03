@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: btc-predictor
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --workers 1 --threads 4 --timeout 0 --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+    plan: starter          # free tier works; upgrade for more RAM if needed
